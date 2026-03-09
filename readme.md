@@ -1,47 +1,40 @@
-# Projet Énergie – Analyse et Visualisation Régionale
+# Projet Énergie - Analyse et Visualisation
 
-Ce projet explore la consommation et la production d'énergie en France par région (2013-2022).  
-Il contient des données brutes, nettoyées, des analyses Python et des visualisations Power BI.
+Ce projet présente une **analyse exploratoire et visualisation des données de production et consommation d'énergie en France** de 2013 à 2022.  
+Il comprend :  
 
-## 📂 Contenu du dépôt
-
-| Fichier | Description |
-|---------|-------------|
-| `BI Projet énergie.pbix` | Rapport Power BI interactif |
-| `Code Nettoyage.ipynb` | Notebook Python pour nettoyage et analyse |
-| `eco2mix-regional-cons-def.csv` | Données brutes |
-| `nrj_nettoye_vf.csv` | Données nettoyées |
-| `Population 2018.csv` | Données démographiques régionales |
-| `images/` | Graphiques Python et exports Power BI |
+- Un notebook Python pour le **nettoyage et l'analyse des données** (`Code Nettoyage.ipynb`)  
+- Un script Python pour **générer automatiquement les graphs** (`generate_graphs.py`)  
+- Des images des résultats Python (`images/*.png`)  
+- Des exports de rapports Power BI (`GraphsPBI/*.jpg`)  
 
 ---
 
-## 📊 Aperçu Graphiques Python
+## Graphs Python (aperçu)
 
-### Valeurs manquantes
-![Valeurs manquantes](images/graph_nan_pourcent.png)
+Ces graphs ont été générés automatiquement à partir du fichier nettoyé.
 
-### Matrice de corrélation
-![Matrice de corrélation](images/graph_correlation.png)
-
-### Consommation par région
-![Consommation](images/graph_boxplot_conso.png)
-
-### Énergie solaire par région
-![Solaire](images/graph_boxplot_solaire.png)
-
-### Bioénergies par région
-![Bioénergies](images/graph_boxplot_bio.png)
+<p float="left">
+  <img src="images/graph_nan_pourcent.png" width="300" />
+  <img src="images/graph_correlation.png" width="300" />
+  <img src="images/graph_boxplot_conso.png" width="300" />
+  <img src="images/graph_boxplot_solaire.png" width="300" />
+  <img src="images/graph_boxplot_bio.png" width="300" />
+</p>
 
 ---
 
-## 📈 Aperçu Visualisations Power BI
+## Graphs Power BI (aperçu)
 
-Les 13 pages exportées du rapport Power BI sont disponibles dans `images/BI Graphs/` :
+Ci-dessous, les 3 premiers graphs exportés depuis Power BI.  
+Les autres exports sont disponibles dans le dossier [`GraphsPBI`](GraphsPBI).
 
-![Page 1](images/BI%20Graphs/BI%20Projet%20énergie_page-0001.jpg)
-![Page 2](images/BI%20Graphs/BI%20Projet%20énergie_page-0002.jpg)
-![Page 3](images/BI%20Graphs/BI%20Projet%20énergie_page-0003.jpg)
+<p float="left">
+  <img src="GraphsPBI/BI Projet énergie_page-0001.jpg" width="300" />
+  <img src="GraphsPBI/BI Projet énergie_page-0002.jpg" width="300" />
+  <img src="GraphsPBI/BI Projet énergie_page-0003.jpg" width="300" />
+</p>
+
 
 ---
 
@@ -52,3 +45,15 @@ Les 13 pages exportées du rapport Power BI sont disponibles dans `images/BI Gra
 - Détecter une dépendance de la France à l'énergie nucléaire. 
 - Analyser l'évolution des énergies renouvelables.
 - Visualiser les résultats via Power BI.
+
+---
+
+## Remarques
+
+- Les fichiers CSV et le fichier `.pbix` **ne sont pas publiés** pour alléger le dépôt.  
+- Les graphs Python sont générés à partir du fichier nettoyé (`nrj_nettoye_vf.csv`), disponible localement.  
+- Les exports Power BI présents dans `GraphsPBI` permettent de visualiser le tableau de bord complet.
+
+---
+
+*Projet réalisé par Paul S, Sébastien B, Julien M et Cécile E*
